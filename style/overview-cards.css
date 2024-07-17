@@ -1,0 +1,63 @@
+.section__title {
+  margin-bottom: 1.75rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+
+.overview__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 'a-1 a-2 c-1 c-2' 'b-1 b-2 d-1 d-2';
+  gap: 1.5rem 1.875rem;
+}
+
+.overview__card {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 0.35rem;
+  background-color: var(--c-card-bg);
+  transition: background-color var(--transition);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.overview__card:hover {
+  background-color: var(--c-card-bg-hover);
+}
+
+.overview__card--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview__card--header-view {
+  color: var(--c-text-light);
+  font-weight: 700;
+  transition: color var(--transition);
+}
+
+.overview__card--btm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.overview__card--btm-num {
+  font-size: 1.75rem;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+
+.overview__card--btm-rate__wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: color var(--transition);
+}

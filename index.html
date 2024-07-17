@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Social Media Dashboard</title>
+    <link rel="stylesheet" href="./style/layout.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/followers-cards.css" />
+    <link rel="stylesheet" href="./style/overview-cards.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <script defer src="./script/theme.js"></script>
+    <script type="module" src="./script/data.js"></script>
+    <script type="module" src="./script/markup.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <h1 class="header__title">Social Media Dashboard</h1>
+        <p class="header__total">Total Followers: 23,004</p>
+        <div class="header__toggle">
+          Dark Mode
+          <button class="btn__toggle"></button>
+        </div>
+      </div>
+      <div class="header__bg"></div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <section class="section--1">
+          <ul class="followers__list"></ul>
+        </section>
+        <section class="section--2">
+          <h2 class="section__title">Overview - Today</h2>
+          <ul class="overview__list"></ul>
+        </section>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#" target="_blank">Jay L</a>.
+    </div>
+  </body>
+</html>
